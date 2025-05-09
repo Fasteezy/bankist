@@ -380,12 +380,55 @@
         >. Use for learning or your portfolio. Don't use to teach. Don't claim
         as your own product.
       </p>
-	<dialog id="pop-up" onclick="popUpElement.show();">Привет, я поп-ап!</dialog>
-	<script>
-		const popUpElement = document.getElementById("pop-up");
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример диалога</title>
+  <style>
+    dialog {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      width: 300px;
+      max-width: 90%;
+      font-family: sans-serif;
+    }
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.5);
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
 
-popUpElement.show();
-	</script>
+  <button id="openDialog">Открыть диалог</button>
+
+  <dialog id="myDialog">
+    <p>Это пример модального окна с использованием тега &lt;dialog&gt;.</p>
+    <button id="closeDialog">Закрыть</button>
+  </dialog>
+
+  <script>
+    const dialog = document.getElementById('myDialog');
+    const openBtn = document.getElementById('openDialog');
+    const closeBtn = document.getElementById('closeDialog');
+
+    openBtn.addEventListener('click', () => {
+      dialog.showModal();
+    });
+
+    closeBtn.addEventListener('click', () => {
+      dialog.close();
+    });
+  </script>
+
+</body>
+</html>
+	
     </footer>
 
     <div class="modal hidden">
