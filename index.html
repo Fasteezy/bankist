@@ -483,25 +483,55 @@ ymab('metrika.92607058', 'setConfig', {
         </div>
     </div>
 	<script type="application/ld+json">
-[{"@type":"BreadcrumbList",
-         "itemListElement": [
-             {
-               "@type": "ListItem",
-               "position": 1,
-               "item": {
-                 "@id": "//example-news.ru/life",
-                 "name": "Жизнь"
-                }
-              },
-              {
-                 "@type": "ListItem",
-                 "position": 2,
-                 "item": {
-                     "@id": "//example-news.ru/life/weather",
-                     "name": "Погода"
-                 }
-               }
-            ]},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://konsol.pro",
+        "name": "Главная"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://konsol.pro/blog",
+        "name": "Журнал"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://konsol.pro/blog/shablony-dokumentov",
+        "name": "Шаблоны документов"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://konsol.pro/blog/articles/putevoy-list-legkovogo-avto-2025",
+        "name": "Что включить путевой лист для легкового автомобиля в 2025 году: скачайте образец заполнения"
+      }
+    }
+  ]
+}
+</script>
+
+	<script type="application/ld+json">
+[{  
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "@id": "https://www.example-news.com/life/weather/moscow#cao",  
+  "datePublished": "2018-12-11T08:56:49Z",
+  "author": [{"@type": "Person", "name": "Иван Иванов"}, 
+     {"@type": "Person", "name": "Петр Петров"}]
+ },
  {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
@@ -512,6 +542,7 @@ ymab('metrika.92607058', 'setConfig', {
  }
 ]
 </script>
+
 	</div>
   </body>
 </html>
