@@ -482,32 +482,35 @@ ymab('metrika.92607058', 'setConfig', {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam lorem sit amet lorem pretium, tincidunt sollicitudin arcu lacinia. In aliquam orci ultrices, venenatis enim ut, aliquam orci. Curabitur sit amet nulla iaculis, tempor odio sed, rutrum diam. Nullam pretium porttitor nunc, in vulputate ex hendrerit ut. Vivamus et scelerisque nibh, vitae sagittis arcu. Donec vulputate eu nunc in ornare. Vestibulum sed nibh id elit lacinia convallis at eu odio. Sed aliquam dictum sapien a laoreet. Phasellus tellus turpis, efficitur vitae ornare vitae, iaculis sit amet leo. In ullamcorper urna ac augue consectetur, vitae suscipit velit mollis. Etiam aliquet arcu lacus, eget condimentum dui pulvinar nec. Integer eget erat a justo volutpat ultrices.</p>
         </div>
     </div>
-	  <script type="application/ld+json">
-[{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@id": "https://bankist-ten.vercel.app/",
-        "name": "Главная"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@id": "https://bankist-ten.vercel.app/s",
-        "name": "Журнал"
-      }
-    },
-    
-    
-    }
-  ]
-}]
+	<script type="application/ld+json">
+[{"@type":"BreadcrumbList",
+         "itemListElement": [
+             {
+               "@type": "ListItem",
+               "position": 1,
+               "item": {
+                 "@id": "//example-news.ru/life",
+                 "name": "Жизнь"
+                }
+              },
+              {
+                 "@type": "ListItem",
+                 "position": 2,
+                 "item": {
+                     "@id": "//example-news.ru/life/weather",
+                     "name": "Погода"
+                 }
+               }
+            ]},
+ {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "@id": "https://www.example-news.com/life/weather/moscow#zao",  
+  "datePublished": "2018-12-11T09:56:49Z",
+  "author": [{"@type": "Person", "name": "Иван Иванов"}, 
+    {"@type": "Person", "name": "Алексей Алексеев"}]
+ }
+]
 </script>
 	</div>
   </body>
